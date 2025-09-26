@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="file:/Q:/FA25/gwr5195/Github/digit110/Redding_09-24_relax_ng-02/Untitled1.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="Untitled1.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
     <title>Shrewsbury Cakes: Original Recipe.</title>
 
@@ -16,7 +16,7 @@
             pound &amp; 1/2 of <ing>flower</ing> roul them out into little cakes</step>
     </paragraph>
 
-    <section type="ing">Our recipe (halved from the original) <measurment>1/2 lb.</measurment>
+    <section type="ingredients">Our recipe (halved from the original) <measurment>1/2 lb.</measurment>
         <ing>(2 sticks) butter, softened</ing>
         <measurment>1/2 lb.</measurment>
         <ing>sugar</ing>

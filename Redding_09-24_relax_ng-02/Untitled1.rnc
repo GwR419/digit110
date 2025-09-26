@@ -2,9 +2,13 @@
 start = root
 root = element root {title, paragraph+, section+}
 title = element title {text}
-paragraph = element paragraph {type, text, step}
-step = element step {num+}
+paragraph = element paragraph {type+, text+, timeline+, text+}
+type = attribute type {"background-info" | "ingredients"}
+timeline = element timeline {text}
+section = element section {text, measurment+, ing+}
+measurment = element measurment {text}
+ing = element ing {text}
+step = element step {num+, text}
 num = attribute num {xsd:integer} 
-type = attribute type {"background-info"}
-section = element section {type}
-type = attribute type {"ing"}
+
+
