@@ -1,0 +1,10 @@
+
+start = root
+root = element root {title, paragraph+, section+}
+title = element title {text}
+paragraph = element paragraph {type, text, step}
+step = element step {num+}
+num = attribute num {xsd:integer} 
+type = attribute type {"background-info"}
+section = element section {type}
+type = attribute type {"ing"}

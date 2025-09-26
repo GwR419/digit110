@@ -2,15 +2,16 @@ start = xml
 xml = element xml {source, poem}
 source = element source {title, author, date}
 title = element title {level, text}
-level = attribute level {xsd:ID}
+level = attribute level {"book"}
 author = element author {text}
 date = element date {when}
-when = attribute when {"when"}
+when = attribute when {xsd:gYear}
 
-poem = element poem {title, lg, ln}
-title = element title {level, text}
-level = attribute level {xsd:ID}
-lg = element lg {ln}
-ln = element {n}
-n = attribute n {xsd:ID}
-
+poem = element poem {title, lg+}
+lg = element lg {ln+}
+ln = element ln {n+, text,placeName+, place+, motif}
+placeName = element placeName {ref, text}
+place = element place {ref, text}
+n = attribute n {xsd:integer}
+ref = attribute ref {"NYC-Man" | "NYC-PennSt" | "NYC-Harlem" | "PR" | "Cuba"| "Ha" | "Ja" | "NYC" | "Ga" | "Fla" | "La" | "NYC-Brook" | "NYC-Bronx" | "NYC-Harlem" | "NYC-Man"}
+motif = element motif {text}
