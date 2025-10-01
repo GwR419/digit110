@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="steel%20ball%20run.rnc" type="application/relax-ng-compact-syntax"?>
+<manga>
+    <metadata>
+        <title>Jojo's Bizarre Adventure - Part 7 Steel Ball Run</title>
+        <author>Hirahiko Araki</author>
+        <publisher>Viz Media</publisher>
+        <language>En/Jp</language>
+    </metadata>
+    <volume n="1">
+        <chapter n="1">The Press Conference</chapter>
+        <pages>
+            <page n="50">
+                <panel n="1" chara="gyro_zeppeli"/>
+            </page>
+            <page n="51">
+                <panal n="1" chara="gyro_zeppeli">
+                    <text_box n="1">NYOHO</text_box>
+                    <text_box n="2">HO</text_box>
+                </panal>
+                <panal n="2" chara="side01">
+                    <text_box>............</text_box>
+                </panal>
+                <panel n="3" chara="gyro_zeppeli"><text_box n="1">HO</text_box></panel>
+                <panel n="4" chara="gyro_zeppeli enemy01"><text_box n="1">HEY, NEVER SEEN THESE THINGS BEFORE.</text_box><text_box n="2">WHAT DO YOU USE THEM FOR?</text_box></panel>
+                <panel n="5" chara="gyro_zeppeli enemy01"></panel>
+                <panel n="6" chara="gyro_zeppeli enemy01"></panel>
+                <panel n="7" chara="enemy01"></panel>
+            </page>
+        </pages>
+
+
+    </volume>
+</manga>

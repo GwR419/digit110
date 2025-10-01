@@ -1,0 +1,18 @@
+start = manga
+manga = element manga {metadata, volume}
+metadata = element metadata {title, author, publisher, language}
+title = element title {text}
+author = element author {text}
+publisher = element publisher {text}
+language = element language {text}
+
+volume = element volume {n, chapter, pages}
+
+chapter = element chapter {n, text}
+pages = element pages {page+}
+page = element page {n, panel+}
+panel = element panel {n, chara+}
+text_box = element text_box {n, text}
+chara = attribute chara {mixed {"gyro_zeppeli"? | "side01"? | "enemy01"?}
+
+n = attribute n {xsd:integer}
