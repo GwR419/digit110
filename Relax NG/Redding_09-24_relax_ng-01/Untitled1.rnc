@@ -10,7 +10,7 @@ level = attribute level {"book" | "inner"}
 
 poem = element poem {title, lg+}
 lg = element lg {ln+}
-ln = element ln {n+, text,mixed{ (place | placeName | motif)*}}
+ln = element ln {n+, text,mixed{(place | placeName | motif)*}}
 n = attribute n {xsd:integer}
 ref = attribute ref {"NYC-Man" | "NYC-PennSt" | "NYC-Harlem" | "PR" | "Cuba"| "Ha" | "Ja" | "NYC" | "Ga" | "Fla" | "La" | "NYC-Brook" | "NYC-Bronx" | "NYC-Harlem" | "NYC-Man"}
 place = element place {ref, text}
