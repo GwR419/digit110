@@ -43,8 +43,8 @@ alt = element alt {quant, unit, text}
 quant = attribute quant {xsd:float}
 unit = attribute unit {"cup" | "T" | "t"  | "F" | "C" | "inch" | "pint"}
 prep = element prep {heading, step+}
-step = element step {n, mixed{combine | equip | equipUse | ingUse*}}
-equip = element equip {id, mixed{(equip | equipUse | setting | time)*}}
+step = element step {n, mixed{(combine | equip | equipUse | ingUse)*}}
+equip = element equip {id, mixed{(equip | equipUse | setting | time | temp | size)*}}
 setting = element setting {temp?, text}
 temp = element temp {quant, unit, text}
 size = element size {depth, unit, text}
@@ -52,7 +52,7 @@ depth = attribute depth {xsd:float}
 equipUse = element equipUse {ref, mixed{(temp | size | equip | equipUse | ingUse | setting | time)*}}
 ingUse = element ingUse {ref?, quant?, unit?, text}
 ref = attribute ref {xsd:IDREFS}
-combine = element combine {ref, text}
+combine = element combine {ref, text, ingUse, text }
 n = attribute n {xsd:integer}
 
 #added yield element
@@ -63,6 +63,7 @@ n = attribute n {xsd:integer}
 # in setting element i added a > to temp then put in text
 #in source changed empty to url
 #added pint to unit
-
-
+#added temp to equip
+#added size to equip
+#added ingUsde to combine
 
